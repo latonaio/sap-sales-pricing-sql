@@ -34,7 +34,7 @@ CREATE TABLE `sap-sales-pricing-condition-record`
     `MaximumConditionAmount` varchar(15) DEFAULT NULL,
     `PricingScaleLine`      varchar(4) DEFAULT NULL,
     `ConditionReleaseStatus` varchar(1) DEFAULT NULL,
-    `ConditionIsDeleted`    bool DEFAULT NULL,
+    `ConditionIsDeleted`    tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`ConditionRecord`, `ConditionSequentialNumber`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
