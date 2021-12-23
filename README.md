@@ -1,6 +1,6 @@
 # sap-sales-pricing-sql
 
-sap-sales-pricing-sql は、主にエッジアプリケーションにおいて、SAPと連携された販売価格 条件レコードデータを保存するSQLテーブルを作成するためのレポジトリです。  
+sap-sales-pricing-sql は、主にエッジアプリケーションにおいて、SAPと連携された 販売価格条件 データを保存するSQLテーブルを作成するためのレポジトリです。  
 sap-sales-pricing-sql は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 ## 前提条件  
@@ -12,13 +12,12 @@ https://api.sap.com/api/OP_API_SLSPRCGCONDITIONRECORD_SRV_0001/overview
 
 ## sqlの設定ファイル
 
-sap-sales-pricing-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
+sap-sales-pricing-condition-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
+* sap-sales-pricing-sql-condition-validity.sql（SAP 販売価格 条件存在性）
 * sap-sales-pricing-sql-condition-record.sql（SAP 販売価格 条件レコード）
 
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。
-
-
