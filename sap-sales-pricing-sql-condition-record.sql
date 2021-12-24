@@ -1,11 +1,11 @@
 CREATE TABLE `sap-sales-pricing-condition-record`
 (
-	`ConditionRecord`               varchar(10) DEFAULT NULL,
-	`ConditionSequentialNumber`     varchar(2) DEFAULT NULL,
+	`ConditionRecord`               varchar(10) NOT NULL,
+	`ConditionValidityEndDate`      date NOT NULL,
+	`ConditionSequentialNumber`     varchar(2) NOT NULL,
 	`ConditionTable`                varchar(3) DEFAULT NULL,
 	`ConditionApplication`          varchar(2) DEFAULT NULL,
 	`ConditionType`                 varchar(4) DEFAULT NULL,
-	`ConditionValidityEndDate`      date DEFAULT NULL,
 	`ConditionValidityStartDate`    date DEFAULT NULL,
 	`CreationDate`                  date DEFAULT NULL,
 	`PricingScaleType`              varchar(1) DEFAULT NULL,
