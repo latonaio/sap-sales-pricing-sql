@@ -1,4 +1,4 @@
-CREATE TABLE `sap-sales-pricing-sql-condition-record`
+CREATE TABLE `sap-sales-pricing-condition-record`
 (
 	`ConditionRecord`               varchar(10) DEFAULT NULL,
 	`ConditionSequentialNumber`     varchar(2) DEFAULT NULL,
@@ -26,6 +26,6 @@ CREATE TABLE `sap-sales-pricing-sql-condition-record`
 	`PricingScaleLine`              varchar(4) DEFAULT NULL,
 	`ConditionReleaseStatus`        varchar(1) DEFAULT NULL,
     PRIMARY KEY (`ConditionRecord`, `ConditionValidityEndDate`, `ConditionSequentialNumber`),
-    CONSTRAINT (`ConditionRecord_fk`, `ConditionValidityEndDate_fk`) FOREIGN KEY (`ConditionRecord_fk`, `ConditionValidityEndDate_fk`) REFERENCES `sap-sales-pricing-sql-condition-validity` (`ConditionRecord_fk`, `ConditionValidityEndDate_fk`)
+    CONSTRAINT (`ConditionRecord_fk`, `ConditionValidityEndDate_fk`) FOREIGN KEY (`ConditionRecord`, `ConditionValidityEndDate`) REFERENCES `sap-sales-pricing-condition-validity` (`ConditionRecord`, `ConditionValidityEndDate`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;

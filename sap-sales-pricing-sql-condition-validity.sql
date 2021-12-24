@@ -1,4 +1,4 @@
-CREATE TABLE `sap-sales-pricing-sql-condition-validity`
+CREATE TABLE `sap-sales-pricing-condition-validity`
 (
              `ConditionRecord`                    varchar(10) DEFAULT NULL,
              `ConditionValidityEndDate`           date DEFAULT NULL,
