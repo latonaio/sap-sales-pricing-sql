@@ -1,13 +1,13 @@
-CREATE TABLE `sap-sales-pricing-condition-record`
+CREATE TABLE `sap_sales_pricing_condition_record`
 (
 	`ConditionRecord`               varchar(10) NOT NULL,
-	`ConditionValidityEndDate`      date NOT NULL,
+	`ConditionValidityEndDate`      varchar(80) NOT NULL,
 	`ConditionSequentialNumber`     varchar(2) NOT NULL,
 	`ConditionTable`                varchar(3) DEFAULT NULL,
 	`ConditionApplication`          varchar(2) DEFAULT NULL,
 	`ConditionType`                 varchar(4) DEFAULT NULL,
-	`ConditionValidityStartDate`    date DEFAULT NULL,
-	`CreationDate`                  date DEFAULT NULL,
+	`ConditionValidityStartDate`    varchar(80) DEFAULT NULL,
+	`CreationDate`                  varchar(80) DEFAULT NULL,
 	`PricingScaleType`              varchar(1) DEFAULT NULL,
 	`PricingScaleBasis`             varchar(1) DEFAULT NULL,
 	`ConditionScaleQuantity`        varchar(17) DEFAULT NULL,
@@ -26,6 +26,6 @@ CREATE TABLE `sap-sales-pricing-condition-record`
 	`PricingScaleLine`              varchar(4) DEFAULT NULL,
 	`ConditionReleaseStatus`        varchar(1) DEFAULT NULL,
     PRIMARY KEY (`ConditionRecord`, `ConditionValidityEndDate`, `ConditionSequentialNumber`),
-    CONSTRAINT (`ConditionRecord_fk`, `ConditionValidityEndDate_fk`) FOREIGN KEY (`ConditionRecord`, `ConditionValidityEndDate`) REFERENCES `sap-sales-pricing-condition-validity` (`ConditionRecord`, `ConditionValidityEndDate`)
+    CONSTRAINT (`SAPSalesPricingConditionRecord_fk`, `ConditionValidityEndDate_fk`) FOREIGN KEY (`ConditionRecord`, `ConditionValidityEndDate`) REFERENCES `sap_sales_pricing_condition_validity` (`ConditionRecord`, `ConditionValidityEndDate`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
