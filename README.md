@@ -14,8 +14,8 @@ https://api.sap.com/api/OP_API_SLSPRCGCONDITIONRECORD_SRV_0001/overview
 
 sap-sales-pricing-condition-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
-* sap-sales-pricing-sql-condition-validity.sql（SAP 販売価格 条件存在性）
-* sap-sales-pricing-sql-condition-record.sql（SAP 販売価格 条件レコード）
+* sap-sales-pricing-sql-condition-validity-data.sql（SAP 販売価格 条件存在性）
+* sap-sales-pricing-sql-condition-record-data.sql（SAP 販売価格 条件レコード）
 
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法

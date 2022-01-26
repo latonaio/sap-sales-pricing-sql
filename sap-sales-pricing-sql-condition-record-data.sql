@@ -1,4 +1,4 @@
-CREATE TABLE `sap_sales_pricing_condition_record`
+CREATE TABLE `sap_sales_pricing_condition_record_data`
 (
 	`ConditionRecord`               varchar(10) NOT NULL,
 	`ConditionValidityEndDate`      varchar(80) NOT NULL,
